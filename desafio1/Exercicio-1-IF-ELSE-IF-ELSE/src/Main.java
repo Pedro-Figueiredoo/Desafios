@@ -8,10 +8,10 @@ public class Main {
         if (numero == 0) {
             JOptionPane.showMessageDialog(null,"O seu número é Neutro");
 
-    } else if (numero < 0) {
+        } else if (numero < 0) {
             JOptionPane.showMessageDialog(null,"O seu número é Negativo");
 
-    } else {
+        } else {
             JOptionPane.showMessageDialog(null,"O seu número é Positivo");
         }
 
