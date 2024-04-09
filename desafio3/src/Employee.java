@@ -1,42 +1,39 @@
 public class Employee {
-    public String nomeFuncionario;
+    private String nome;
+    private double salarioBruto;
+    private final double taxa = 1.1;
 
-    public Double salarioBruto;
-
-    public String getNomeFuncionario() {
-        return nomeFuncionario;
+    public Employee() {
     }
 
-    public void setNomeFuncionario(String nomeFuncionario) {
-        this.nomeFuncionario = nomeFuncionario;
-    }
-
-    public Double getSalarioBruto() {
-        return salarioBruto;
-    }
-
-    public void setSalarioBruto(Double salarioBruto) {
+    public Employee(String nome, double salarioBruto) {
+        this.nome = nome;
         this.salarioBruto = salarioBruto;
     }
 
-    public Double getTaxa() {
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public double getSalarioBruto() {
+        return salarioBruto;
+    }
+
+    public void setSalarioBruto(double salarioBruto) {
+        this.salarioBruto = salarioBruto;
+    }
+
+    public double getTaxa() {
         return taxa;
     }
 
     @Override
     public String toString() {
-        return "Employee{" +
-                "nomeFuncionario='" + nomeFuncionario + '\'' +
-                '}';
+        return
+                "Nome= " + nome + ", Salario bruto= " + salarioBruto ;
     }
-
-    public void setTaxa(Double taxa) {
-        this.taxa = taxa;
-    }
-
-    public Double taxa;
-
-
-
-
 }
