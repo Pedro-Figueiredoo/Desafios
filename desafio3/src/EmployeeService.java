@@ -3,7 +3,7 @@ public class EmployeeService {
     public void obterSalarioLiquido(Employee employee){
         int descontoInss = 200;
         double salarioLiquido = employee.getSalarioBruto() - descontoInss;
-        System.out.println(employee.getNome() + " seu salario liquido eh: " + salarioLiquido);
+        System.out.println(employee.getNome() + " seu salario liquido é: " + salarioLiquido);
     }
 
     public void aumentoSalario(Employee employee){
@@ -12,6 +12,6 @@ public class EmployeeService {
 
         employee.setSalarioBruto(novoSalarioBruto);
 
-        System.out.println(employee.getNome() + " seu salario agora eh: " + novoSalarioBruto);
+        System.out.println(employee.getNome() + " Seu salario agora eh: " + novoSalarioBruto);
     }
 }

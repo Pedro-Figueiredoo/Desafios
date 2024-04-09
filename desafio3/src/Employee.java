@@ -34,6 +34,6 @@ public class Employee {
     @Override
     public String toString() {
         return
-                "Nome= " + nome + ", Salario bruto= " + salarioBruto ;
+                "Nome = " + nome + ", Salario bruto = " + salarioBruto ;
     }
 }
